@@ -79,27 +79,37 @@
                         <!--Responsive List-->
                         <ul class="list-group visible-xs">
                             <li class="list-group-item">
-                                <p><strong>Id: </strong><asp:DynamicControl runat="server" DataField="Id" ID="Id2" Mode="ReadOnly" />
+                                <p>
+                                    <strong>Id: </strong>
+                                    <asp:DynamicControl runat="server" DataField="Id" ID="Id2" Mode="ReadOnly" />
                                 </p>
                             </li>
                             <li class="list-group-item">
-                                <p><strong>Course ID: </strong><asp:DynamicControl runat="server" DataField="CourseID" ID="CourseID2" Mode="ReadOnly" /></p>
+                                <p><strong>Course ID: </strong>
+                                    <asp:DynamicControl runat="server" DataField="CourseID" ID="CourseID2" Mode="ReadOnly" />
+                                </p>
                             </li>
                             <li class="list-group-item">
-                                <p><strong>Course Name: </strong><asp:DynamicControl runat="server" DataField="CourseName" ID="CourseName2" Mode="ReadOnly" /></p>
+                                <p><strong>Course Name: </strong>
+                                    <asp:DynamicControl runat="server" DataField="CourseName" ID="CourseName2" Mode="ReadOnly" />
+                                </p>
                             </li>
                             <li class="list-group-item">
-                                <p><strong>Course Description: </strong><asp:DynamicControl runat="server" DataField="CourseDescription" ID="CourseDescription2" Mode="ReadOnly" /></p>
+                                <p><strong>Course Description: </strong>
+                                    <asp:DynamicControl runat="server" DataField="CourseDescription" ID="CourseDescription2" Mode="ReadOnly" />
+                                </p>
                             </li>
                             <li class="list-group-item">
-                                <p><strong>Course Cost: </strong><asp:DynamicControl runat="server" DataField="CourseCost" ID="CourseCost2" Mode="ReadOnly" /></p>
+                                <p><strong>Course Cost: </strong>
+                                    <asp:DynamicControl runat="server" DataField="CourseCost" ID="CourseCost2" Mode="ReadOnly" />
+                                </p>
                             </li>
                             <li class="list-group-item">
                                 <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Courses/Details", Item.Id) %>' Text="Details" />
-                                | 
-					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Courses/Edit", Item.Id) %>' Text="Edit" />
-                                | 
-                        <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Courses/Delete", Item.Id) %>' Text="Delete" />
+                                |
+                                <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Courses/Edit", Item.Id) %>' Text="Edit" />
+                                |
+                                <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Courses/Delete", Item.Id) %>' Text="Delete" />
                             </li>
                         </ul>
                     </tr>
