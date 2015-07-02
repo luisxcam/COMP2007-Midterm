@@ -5,7 +5,7 @@
     <div class="content-body">
         <h2>Courses List</h2>
         <p>
-            <asp:HyperLink runat="server" NavigateUrl="Insert" Text="Create new" />
+            <asp:HyperLink runat="server" NavigateUrl="Courses/Insert" Text="Create new" />
         </p>
         <div>
             <asp:ListView ID="ListView1" runat="server"

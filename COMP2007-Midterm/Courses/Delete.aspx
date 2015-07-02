@@ -2,17 +2,17 @@
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
     <div>
 		<p>&nbsp;</p>
-        <h3>Are you sure want to delete this Cours?</h3>
+        <h3>Are you sure want to delete this Course?</h3>
         <asp:FormView runat="server"
             ItemType="COMP2007_Midterm.Models.Cours" DataKeyNames="Id"
             DeleteMethod="DeleteItem" SelectMethod="GetItem"
             OnItemCommand="ItemCommand" RenderOuterTable="false">
             <EmptyDataTemplate>
-                Cannot find the Cours with Id <%: Request.QueryString["Id"] %>
+                Cannot find the Course with Id <%: Request.QueryString["Id"] %>
             </EmptyDataTemplate>
             <ItemTemplate>
                 <fieldset class="form-horizontal">
-                    <legend>Delete Cours</legend>
+                    <legend>Delete Course</legend>
 							<div class="row">
 								<div class="col-sm-2 text-right">
 									<strong>Id</strong>

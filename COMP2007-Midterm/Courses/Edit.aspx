@@ -7,11 +7,11 @@
             UpdateMethod="UpdateItem" SelectMethod="GetItem"
             OnItemCommand="ItemCommand" RenderOuterTable="false">
             <EmptyDataTemplate>
-                Cannot find the Cours with Id <%: Request.QueryString["Id"] %>
+                Cannot find the Course with Id <%: Request.QueryString["Id"] %>
             </EmptyDataTemplate>
             <EditItemTemplate>
                 <fieldset class="form-horizontal">
-                    <legend>Edit Cours</legend>
+                    <legend>Edit Course</legend>
 					<asp:ValidationSummary runat="server" CssClass="alert alert-danger"  />                 
 						    <asp:DynamicControl Mode="Edit" DataField="CourseID" runat="server" />
 						    <asp:DynamicControl Mode="Edit" DataField="CourseName" runat="server" />

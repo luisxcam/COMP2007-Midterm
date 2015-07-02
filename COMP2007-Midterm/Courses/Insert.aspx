@@ -8,7 +8,7 @@
             OnItemCommand="ItemCommand" RenderOuterTable="false">
             <InsertItemTemplate>
                 <fieldset class="form-horizontal">
-				<legend>Insert Cours</legend>
+				<legend>Insert Course</legend>
 		        <asp:ValidationSummary runat="server" CssClass="alert alert-danger" />
 						    <asp:DynamicControl Mode="Insert" DataField="CourseID" runat="server" />
 						    <asp:DynamicControl Mode="Insert" DataField="CourseName" runat="server" />

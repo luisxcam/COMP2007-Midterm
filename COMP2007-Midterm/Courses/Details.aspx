@@ -8,11 +8,11 @@
             SelectMethod="GetItem"
             OnItemCommand="ItemCommand" RenderOuterTable="false">
             <EmptyDataTemplate>
-                Cannot find the Cours with Id <%: Request.QueryString["Id"] %>
+                Cannot find the Course with Id <%: Request.QueryString["Id"] %>
             </EmptyDataTemplate>
             <ItemTemplate>
                 <fieldset class="form-horizontal">
-                    <legend>Cours Details</legend>
+                    <legend>Course Details</legend>
 							<div class="row">
 								<div class="col-sm-2 text-right">
 									<strong>Id</strong>
