@@ -14,7 +14,8 @@
                 There are no entries found for Courses
             </EmptyDataTemplate>
             <LayoutTemplate>
-                <table class="table">
+                <div class="panel panel-default">
+                    <table class="table">
                     <thead>
                         <tr>
                             <th>
@@ -32,13 +33,14 @@
                             <th>
 								<asp:LinkButton Text="CourseCost" CommandName="Sort" CommandArgument="CourseCost" runat="Server" />
 							</th>
-                            <th>&nbsp;</th>
+                            <th id="table-controls">Controls</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr runat="server" id="itemPlaceholder" />
                     </tbody>
                 </table>
+                </div>
 				<asp:DataPager PageSize="5"  runat="server">
 					<Fields>
                         <asp:NextPreviousPagerField ShowLastPageButton="False" ShowNextPageButton="False" ButtonType="Button" ButtonCssClass="btn" />

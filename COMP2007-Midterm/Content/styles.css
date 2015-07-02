@@ -2,3 +2,11 @@
     padding-top: 65px;
     padding-bottom: 65px;
 }
+
+#table-controls{
+    color:#337AB7;
+    text-decoration:none;
+    background-color:transparent;
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:14px;
+}
