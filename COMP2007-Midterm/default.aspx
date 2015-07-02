@@ -18,7 +18,7 @@
                 <LayoutTemplate>
                     <div class="panel panel-default">
                         <table class="table">
-                            <thead>
+                            <thead class="hidden-xs">
                                 <tr>
                                     <th>
                                         <asp:LinkButton Text="Id" CommandName="Sort" CommandArgument="Id" runat="Server" />
@@ -53,28 +53,55 @@
                 </LayoutTemplate>
                 <ItemTemplate>
                     <tr>
-                        <td>
+                        <td class="hidden-xs">
                             <asp:DynamicControl runat="server" DataField="Id" ID="Id" Mode="ReadOnly" />
                         </td>
-                        <td>
+                        <td class="hidden-xs">
                             <asp:DynamicControl runat="server" DataField="CourseID" ID="CourseID" Mode="ReadOnly" />
                         </td>
-                        <td>
+                        <td class="hidden-xs">
                             <asp:DynamicControl runat="server" DataField="CourseName" ID="CourseName" Mode="ReadOnly" />
                         </td>
-                        <td>
+                        <td class="hidden-xs">
                             <asp:DynamicControl runat="server" DataField="CourseDescription" ID="CourseDescription" Mode="ReadOnly" />
                         </td>
-                        <td>
+                        <td class="hidden-xs">
                             <asp:DynamicControl runat="server" DataField="CourseCost" ID="CourseCost" Mode="ReadOnly" />
                         </td>
-                        <td>
+                        <td class="hidden-xs">
                             <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Courses/Details", Item.Id) %>' Text="Details" />
                             | 
 					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Courses/Edit", Item.Id) %>' Text="Edit" />
                             | 
                         <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Courses/Delete", Item.Id) %>' Text="Delete" />
                         </td>
+
+                        <!--Responsive List-->
+                        <ul class="list-group visible-xs">
+                            <li class="list-group-item">
+                                <p><strong>Id: </strong><asp:DynamicControl runat="server" DataField="Id" ID="Id2" Mode="ReadOnly" />
+                                </p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><strong>Course ID: </strong><asp:DynamicControl runat="server" DataField="CourseID" ID="CourseID2" Mode="ReadOnly" /></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><strong>Course Name: </strong><asp:DynamicControl runat="server" DataField="CourseName" ID="CourseName2" Mode="ReadOnly" /></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><strong>Course Description: </strong><asp:DynamicControl runat="server" DataField="CourseDescription" ID="CourseDescription2" Mode="ReadOnly" /></p>
+                            </li>
+                            <li class="list-group-item">
+                                <p><strong>Course Cost: </strong><asp:DynamicControl runat="server" DataField="CourseCost" ID="CourseCost2" Mode="ReadOnly" /></p>
+                            </li>
+                            <li class="list-group-item">
+                                <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Courses/Details", Item.Id) %>' Text="Details" />
+                                | 
+					    <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Courses/Edit", Item.Id) %>' Text="Edit" />
+                                | 
+                        <asp:HyperLink runat="server" NavigateUrl='<%# FriendlyUrl.Href("~/Courses/Delete", Item.Id) %>' Text="Delete" />
+                            </li>
+                        </ul>
                     </tr>
                 </ItemTemplate>
             </asp:ListView>
