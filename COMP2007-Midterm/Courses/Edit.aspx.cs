@@ -39,7 +39,7 @@ namespace COMP2007_Midterm.Courses
                 {
                     // Save changes here
                     _db.SaveChanges();
-                    Response.Redirect("../Default");
+                    Response.Redirect("../../Default");
                 }
             }
         }
@@ -63,7 +63,7 @@ namespace COMP2007_Midterm.Courses
         {
             if (e.CommandName.Equals("Cancel", StringComparison.OrdinalIgnoreCase))
             {
-                Response.Redirect("../Default");
+                Response.Redirect("../../Default");
             }
         }
     }
