@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 
 <!-- Developer: Luis Acevedo -->
-<!-- Project: -->
-<!-- Description -->
-<!-- Version:  -->
+<!-- Project: Midterm-->
+<!-- Description: Midterm for COMP2007-->
+<!-- Version:  2015-07-02-->
 <html lang="en">
 <head runat="server">
     <meta charset="utf-8">
@@ -27,13 +27,13 @@
                 <!--Header-->
                 <nav class="navbar navbar-default navbar-fixed-top">
                     <div class="navbar-brand">
-                        <a href="/">Midterm</a>
+                        <a href="../Default.aspx">Courses</a>
                     </div>
                     <!--.navbar-brand-->
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Link</a></li>
+                            <li><a href="../Courses/Insert.aspx">Insert New Data</a></li>
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
