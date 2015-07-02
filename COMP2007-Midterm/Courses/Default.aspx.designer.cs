@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_Midterm {
+namespace COMP2007_Midterm.Courses {
     
     
-    public partial class _default {
+    public partial class Default {
         
         /// <summary>
-        /// crudPanel control.
+        /// ListView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl crudPanel;
+        protected global::System.Web.UI.WebControls.ListView ListView1;
     }
 }

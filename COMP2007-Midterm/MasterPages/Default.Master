@@ -21,7 +21,7 @@
     <link href="../Content/styles.css" rel="stylesheet" />
 </head>
 <body>
-     <div class="container">
+    <div class="container">
         <form id="form1" runat="server">
             <div id="PageWrapper">
                 <!--Header-->
@@ -30,6 +30,13 @@
                         <a href="/">Midterm</a>
                     </div>
                     <!--.navbar-brand-->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Link</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
                 </nav>
                 <!--.navbar navbar-default navbar-fixed-top-->
 
@@ -39,14 +46,16 @@
                         <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
                     </section>
                     <!--#mainContent-->
-                </div><!--.container body-content-->
+                </div>
+                <!--.container body-content-->
 
                 <!--Footer-->
                 <footer class="nav navbar-fixed-bottom navbar-default">
                     <div class="container-fluid">
                         <h4 class="navbar-text">© Copyright 2015</h4>
                     </div>
-                </footer><!--.nav navbar-fixed-bottom navbar-default-->
+                </footer>
+                <!--.nav navbar-fixed-bottom navbar-default-->
             </div>
             <!--#PageWrapper-->
         </form>
